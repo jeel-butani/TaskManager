@@ -56,7 +56,7 @@ task-manager/
 │   └── style.css     # Styles and responsive CSS rules for the app
 ├── js/
 │   ├── script.js     # JavaScript logic for task management
-│   └── jquery-script.js  # Optional, for additional jQuery effects/animations
+│   └── jquery-script.js  
 ├── README.md         # Project documentation file
 ```
 
