@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"> 
+  <!-- The title of the webpage that appears in the browser tab -->
+  <title>Task Manager</title>
+  
+  <!-- Link to the external CSS file for styling the page -->
+  <link rel="stylesheet" href="css/style.css">
+  
+  <!-- Include jQuery library from CDN to facilitate DOM manipulation -->
+  <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+</head>
+<body>
+  <!-- Header section with the page title -->
+  <header>
+    <h1>Task Manager</h1>
+  </header>
+
+  <main>
+    <section class="task-input">
+      <!-- Input field for entering a new task -->
+      <input type="text" id="task-input" placeholder="Enter a new task"> 
+      
+      <!-- Button to add the entered task to the list -->
+      <button id="add-task-btn">Add Task</button>
+      
+      <!-- Filter section to choose the type of tasks to display (all, completed, pending) -->
+      <section class="task-filter">
+        <select id="filter-tasks">
+          <option value="all">All Tasks</option>
+          <option value="completed">Completed Tasks</option>
+          <option value="pending">Pending Tasks</option>
+        </select>
+      </section>
+    </section>
+    
+    <!-- Section displaying the list of tasks -->
+    <section class="task-list">
+      <!-- Unordered list where tasks will be dynamically added -->
+      <ul id="tasks"></ul>
+    </section>
+  </main>
+
+  <!-- Include the script for handling task management actions -->
+  <script src="js/script.js"></script>
+  <script src="js/jquery-script.js"></script>
+</body>
+</html>
